@@ -9,4 +9,13 @@ int main()
 
         Resolver usando do-while.
     */
+    int numero;
+
+    do
+    {
+        cout << "Ingresa un numero positivo: ";
+        cin >> numero;
+    } while (numero < 0);
+
+    cout << "Ingresaste el numero: " << numero;
 }
