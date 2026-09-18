@@ -24,26 +24,27 @@ int main()
         cout << "3. Salir\n";
         cin >> opcion;
 
-    } while (opcion > 3 || opcion < 0);
-    int numero1, numero2, resultado;
-    cout << "ingresa el primer numero ";
-    cin >> numero1;
-    cout << "ingrese el segundo numero ";
-    cin >> numero2;
-    if (opcion == 1)
-    {
-        cout << "tu opcion es sumar\n";
-        resultado = numero1 + numero2;
-        cout << "tu resultado es:" << resultado << endl;
-    }
-    else if (opcion == 2)
-    {
-        cout << "tu opcion es resta\n";
-        resultado = numero1 - numero2;
-        cout << "tu resultado es:" << resultado << endl;
-    }
-    else
-    {
-        cout << "salir\n";
-    }
+        int numero1, numero2, resultado;
+
+        if (opcion == 1 || opcion == 2)
+        {
+            cout << "ingresa el primer numero ";
+            cin >> numero1;
+            cout << "ingrese el segundo numero ";
+            cin >> numero2;
+        }
+
+        if (opcion == 1)
+        {
+            resultado = numero1 + numero2;
+            cout << "tu resultado es:" << resultado << endl
+                 << endl;
+        }
+        else if (opcion == 2)
+        {
+            resultado = numero1 - numero2;
+            cout << "tu resultado es:" << resultado << endl
+                 << endl;
+        }
+    } while (opcion != 3);
 }
