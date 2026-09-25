@@ -10,9 +10,11 @@ int main()
         Por ejemplo, si N es 6, la suma tiene que dar 12 (2+4+6).
     */
 
-    int N, suma;
+    int N;
+    int suma = 0;
     cout << "ingrese un numero ";
     cin >> N;
+
     int i = 0;
     while (i <= N)
     {
