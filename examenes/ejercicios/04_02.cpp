@@ -18,14 +18,26 @@ int main()
             Aumento: 2500$
             Salario Total: 12500$
     */
-    int horas;
-    int horas_acumuladas = 0;
     int trabajadores;
     cout << "ingrese la cantidad de trabajadores: ";
     cin >> trabajadores;
-    for (int i = 1; i <= 24; i++)
+
+    for (int j = 1; j <= trabajadores; j++)
     {
-        cin >> horas;
-        horas_acumuladas = horas_acumuladas + horas;
+        int horas_acumuladas = 0;
+        for (int i = 1; i <= 24; i++)
+        {
+            int horas;
+            cin >> horas;
+            horas_acumuladas = horas_acumuladas + horas;
+        }
+
+        int salario_base = horas_acumuladas * 2250;
+        float aumento = salario_base * 0.25;
+        float salario_total = salario_base + aumento;
+
+        cout << "Salario Base: " << salario_base << "$\n";
+        cout << "Aumento: " << aumento << "$\n";
+        cout << "Salario Total: " << salario_total << "$\n";
     }
 }
