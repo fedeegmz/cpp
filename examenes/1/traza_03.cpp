@@ -25,6 +25,7 @@ int main()
         palabra1 = "Pez";
         break;
     }
+
     switch (letra2)
     {
     case 'm':
@@ -42,3 +43,11 @@ int main()
 
     cout << palabra1 << " " << palabra2;
 }
+/*
+letra1    letra2   palabra1   palabra2   salida
+d
+           M
+                    Gato
+                               verde
+                                         Gato verde
+*/
